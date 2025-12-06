@@ -11,7 +11,7 @@
 
 @layer base {
   :root {
-    --background: 214 71% 9%;
+    --background: 220 20% 4%;
     --foreground: 210 40% 98%;
 
     --card: 214 71% 12%;
@@ -54,6 +54,8 @@
     --font-display: 'Caveat', cursive;
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
+    --font-hero: 'Macondo', 'PT Sans', cursive;
+    --font-subtitle: 'Raleway', 'PT Sans', sans-serif;
     
     --gradient-glow: radial-gradient(ellipse at center, hsl(168 76% 42% / 0.15) 0%, transparent 70%);
     --shadow-glow: 0 0 30px hsl(168 76% 42% / 0.3);
@@ -114,7 +116,7 @@
   }
 
   .social-icon {
-    @apply w-10 h-10 flex items-center justify-center text-muted-foreground hover:text-primary transition-colors duration-300;
+    @apply w-10 h-10 flex items-center justify-center text-foreground hover:text-primary transition-colors duration-300;
   }
 
   .form-input {

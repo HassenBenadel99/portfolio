@@ -7,10 +7,10 @@ const Index = () => {
       <ParticlesBackground />
       <div className="relative min-h-screen flex flex-col items-center justify-center px-8">
         <div className="text-center z-10 animate-fade-in-up">
-          <h1 className="hero-title mb-4">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4" style={{ fontFamily: "var(--font-hero)" }}>
             Hello, I'm <span className="text-foreground">Your Name</span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground tracking-wide">
+          <p className="text-lg md:text-xl text-muted-foreground tracking-wide" style={{ fontFamily: "var(--font-subtitle)" }}>
             Software Engineer & Full Stack Developer
           </p>
           
