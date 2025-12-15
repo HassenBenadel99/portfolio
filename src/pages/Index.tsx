@@ -12,7 +12,7 @@ const Index = () => {
 
           <div className="mt-12">
             <a
-              href="/cv"
+              href="/resources/MohamedHassen_Benadel_CV_ENG.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition"
