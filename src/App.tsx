@@ -5,12 +5,23 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
+import Experience from "./pages/Experience";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
+
+const CV = () => (
+  <div className="h-screen w-screen overflow-hidden">
+    <iframe
+      src="/resources/MohamedHassen_Benadel_CV_ENG.pdf"
+      className="w-full h-full border-none"
+      title="Mohamed Hassen Benadel CV"
+    />
+  </div>
+);
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -21,9 +32,11 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
+          <Route path="/experience" element={<Experience />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/cv" element={<CV />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

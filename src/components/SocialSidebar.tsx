@@ -1,19 +1,19 @@
-import { Home, User, Briefcase, Grid3X3, Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import { Home, User, Briefcase, Grid3X3, Mail, Github, Linkedin, Code } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
 const navigationIcons = [
   { icon: Home, path: '/', label: 'Home' },
   { icon: User, path: '/about', label: 'About' },
-  { icon: Briefcase, path: '/skills', label: 'Skills' },
+  { icon: Briefcase, path: '/experience', label: 'Experience' },
+  { icon: Code, path: '/skills', label: 'Skills' },
   { icon: Grid3X3, path: '/projects', label: 'Projects' },
   { icon: Mail, path: '/contact', label: 'Contact' },
 ];
 
 const socialLinks = [
-  { icon: Github, href: '#', label: 'GitHub' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: Twitter, href: '#', label: 'Twitter' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/hassenbenadel/', label: 'LinkedIn' },
+  { icon: Github, href: 'https://github.com/HassenBenadel99', label: 'GitHub' },
 ];
 
 const SocialSidebar = () => {
@@ -40,7 +40,7 @@ const SocialSidebar = () => {
           );
         })}
       </div>
-      
+
       <div className="flex flex-col gap-4">
         {socialLinks.map((item) => {
           const Icon = item.icon;
