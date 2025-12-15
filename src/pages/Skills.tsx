@@ -111,7 +111,7 @@ const Skills = () => {
       <div className="h-screen w-full flex items-center justify-center overflow-hidden relative">
 
         {/* Main Diagram Container */}
-        <div className="relative w-full max-w-[90rem] h-[80vh] min-h-[500px] flex items-center justify-center">
+        <div className="relative w-full max-w-[90rem] h-[80vh] min-h-[500px] flex items-center justify-center animate-fade-in-up">
 
           {/* SVG Connections Layer */}
           <svg className="absolute inset-0 w-full h-full pointer-events-none z-0">
@@ -198,7 +198,7 @@ const Skills = () => {
 
         {/* Mobile View: Stacked Layout */}
         <div className="md:hidden absolute inset-0 bg-background overflow-y-auto px-4 py-10 z-50">
-          <div className="flex flex-col gap-6 pb-20 mt-10">
+          <div className="flex flex-col gap-6 pb-20 mt-10 animate-fade-in-up">
             <h1 className="text-3xl font-bold text-center mb-6 text-primary" style={{ fontFamily: 'Montserrat, sans-serif' }}>My Skills</h1>
             {categoryConfig.map((cat) => (
               <div key={cat.id} className="bg-card/90 backdrop-blur-sm border border-border p-4 rounded-xl shadow-md border-l-4" style={{ borderLeftColor: cat.color }}>
